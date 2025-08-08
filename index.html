@@ -1,26 +1,173 @@
+<<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Aluraflix</title>
+  <meta charset="UTF-8">
+  <title>Rock Infinito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Chakra Petch', sans-serif;
+      background-color: black;
+      background-image: url('https://www.transparenttextures.com/patterns/skulls.png');
+      color: rgb(0, 0, 0);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 2px solid rgb(42, 122, 228);
+      color: rgb(42, 122, 228);
+      font-size: 32px;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .chamada {
+      background-color: rgb(184, 156, 213);
+      color: black;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .chamada h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .chamada p {
+      font-size: 20px;
+    }
+
+    .categoria {
+      padding: 40px 20px;
+    }
+
+    .categoria h2 {
+      color: rgb(42, 122, 228);
+      margin-bottom: 20px;
+    }
+
+    .categoria-videos {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+    }
+
+    .categoria-videos a {
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+
+    .categoria-videos img {
+      height: 200px;
+      border-radius: 10px;
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+
+    .categoria-videos img:hover {
+      opacity: 1;
+      border: 3px solid crimson;
+      transform: scale(1.05);
+    }
+
+    .descricao {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .menção {
+      background-color: #222;
+      padding: 40px 20px;
+      margin-top: 40px;
+      border-top: 2px solid crimson;
+    }
+
+    .menção h2 {
+      color: crimson;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .menção p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    a {
+      color: rgb(228, 42, 42);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: white;
+      text-shadow: 0 0 10px red;
+    }
+  </style>
 </head>
-
 <body>
-    <header>ALURAFLIX</header>
 
-    <section>
-        <div>
-            <h1>ATRAVÉS DO ARANHAVERSO SUPERA O PRIMEIRO FILME?</h1>
-            <p>#homem-aranha</p>
-        </div>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468379.png" alt="Logo Caveira">
+    Rock Infinito
+  </header>
 
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
+  <div class="chamada">
+    <h1>Bem-vindo ao universo do Rock</h1>
+    <p>Explore os clássicos, descubra novas bandas e mergulhe no som que nunca morre.</p>
+  </div>
+
+  <div class="categoria">
+    <h2>🎸 Clássicos do Rock</h2>
+    <div class="categoria-videos">
+      <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png" alt="Queen">
+      </a>
+      <a href="https://www.youtube.com/watch?v=pAgnJDJN4VA" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Back_in_Black_ACDC.png" alt="AC/DC">
+      </a>
+      <a href="https://www.youtube.com/watch?v=ktvTqknDobU" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Imagine_Dragons_Radioactive.jpg" alt="Imagine Dragons">
+      </a>
+      <a href="https://www.youtube.com/watch?v=hTWKbfoikeg" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg" alt="Nirvana">
+      </a>
+      <a href="https://www.youtube.com/watch?v=CD-E-LDc384" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Metallica_-_Master_of_Puppets_cover.jpg" alt="Metallica">
+      </a>
+      <a href="https://www.youtube.com/watch?v=xbhCPt6PZIU" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Led_Zeppelin_-_Led_Zeppelin_IV.jpg" alt="Led Zeppelin">
+      </a>
+      <a href="https://www.youtube.com/watch?v=O4irXQhgMqg" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/Rolling_Stones_-_Sticky_Fingers.jpg" alt="Rolling Stones">
+      </a>
+    </div>
+
+    <div class="descricao">
+      <p><strong>Queen</strong>: Mistura de ópera e rock com vocais lendários de Freddie Mercury.</p>
+      <p><strong>AC/DC</strong>: Energia pura e riffs marcantes do hard rock australiano.</p>
+      <p><strong>Imagine Dragons</strong>: Rock alternativo moderno com batidas eletrônicas.</p>
+      <p><strong>Nirvana</strong>: Ícone do grunge dos anos 90, liderado por Kurt Cobain.</p>
+      <p><strong>Metallica</strong>: Gigante do heavy metal com solos poderosos e letras intensas.</p>
+      <p><strong>Led Zeppelin</strong>: Pioneiros do rock pesado e psicodélico com Jimmy Page e Robert Plant.</p>
+      <p><strong>Rolling Stones</strong>: Lendas vivas do rock britânico com décadas de hits.</p>
+    </div>
+  </div>
+
+  <div class="menção">
+    <h2>🦇 Menção Honrosa: Ozzy Osbourne</h2>
+    <p>Conhecido como o "Príncipe das Trevas", Ozzy Osbourne é uma figura icônica do heavy metal. Vocalista original do Black Sabbath, ele ajudou a definir o som sombrio e poderoso do gênero. Sua carreira solo é marcada por sucessos como "Crazy Train" e "Mr. Crowley", além de uma personalidade irreverente que conquistou fãs no mundo todo.</p>
+    <p><a href="https://www.youtube.com/watch?v=FVovq9TGBw0" target="_blank">Ouça Ozzy Osbourne - Crazy Train</a></p>
+  </div>
 
 </body>
-
 </html>
+
